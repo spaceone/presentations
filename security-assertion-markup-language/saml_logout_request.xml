@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<samlp:LogoutRequest
+    Destination="https://ucs-sso.dev.local/simplesamlphp/saml2/idp/SingleLogoutService.php"
+    ID="id-jvERsMjrnJwaYUkDa" IssueInstant="2017-12-19T00:32:40Z" Reason="" Version="2.0"
+    xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <saml:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://master120.dev.local/univention/saml/metadata</saml:Issuer>
+    <ds:Signature Id="Signature1">
+        <ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <ds:Reference URI="#id-jvERsMjrnJwaYUkDa">
+                <ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue>gc4KeO2GRIrC+OtTpRUOLfaR19w=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>rM3+TwEL9UtSgf8u4tJ414WBjlKebZA6XlmU7UW7LggAlDY9pOMk2x8URy3doBnz
+            NHgQ+ms1q+NKHHSNCpKncgXHOU8BHdCY8K2KKjnGnVw+iHApYH6YwbYlzti/5KdG
+            7tAcX2CfA8yuWeUpqgt7T7xGfmTE7vDh6xkmS2zjnDJJYKTyLCSmDN5K2eLASGO7
+            qzxm+wZUQK+VxYLmBYLeg5boYH6BqTmhmoUfiY1nVKqXHNRkNtDA2JndlTf3kLKe
+            EHdzP4peE7owKar67ZDuieIjc1mJvoShtqF22TIB41cdgDHLQsc4RmnhU9yPberU bgkCZ9YG1uyhBYm6eTOGtg==</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>MIIFGzCCBAOgAwIBAgIBATANBgkqhkiG9w0BAQsFADCBtDELMAkGA1UEBhMCREUxCzAJBgNVBAgTAkRFMQswCQYDVQQHEwJERTELMAkGA1UEChMCREUxJDAiBgNVBAsTG1VuaXZlbnRpb24gQ29ycG9yYXRlIFNlcnZlcjE6MDgGA1UEAxMxVW5pdmVudGlvbiBDb3Jwb3JhdGUgU2VydmVyIFJvb3QgQ0EgKElEPVlSa0xXTER1KTEcMBoGCSqGSIb3DQEJARYNc3NsQGRldi5sb2NhbDAeFw0xNzEyMTgwOTUyMjJaFw0yMjEyMTcwOTUyMjJaMIGWMQswCQYDVQQGEwJERTELMAkGA1UECBMCREUxCzAJBgNVBAcTAkRFMQswCQYDVQQKEwJERTEkMCIGA1UECxMbVW5pdmVudGlvbiBDb3Jwb3JhdGUgU2VydmVyMRwwGgYDVQQDExNtYXN0ZXIxMjAuZGV2LmxvY2FsMRwwGgYJKoZIhvcNAQkBFg1zc2xAZGV2LmxvY2FsMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxkR33nNYCiBKrtPceohOmqOKapQjjLHwGSpiKayLEU+LB60gh/HEUhZnBy5OZ5A7NqGv9WfqLIsibr6MmZvBPtx9mebXASUFC4r0qYyp9jVbCzg1MHo5ZhYy6UBErs0TF7fUifS8ROZ3vTuVgIbbudhhsCq8svzsKRAuTZGKUFJF8wmjfJpWQbWmmypVbLHSLSAXAOME17a4hH/HonaSLKi7F+RRLM9E1q6voC+ROpkWJtJi6WJrMWz7OQnTQSNKPhNVJvRnwW267ZQ3mcK+r7G6o+5xGbi057eAWv8JYUwwb/755sJieAHdVXVZbEBmUrD5Ed5wRByd0505mgl5uwIDAQABo4IBUjCCAU4wCQYDVR0TBAIwADAdBgNVHQ4EFgQUlNYAVFlTXgLqC0+ap8eYsLKtY90wgekGA1UdIwSB4TCB3oAUb2HovhgvFNUXI8YdZxW4RAFFsg2hgbqkgbcwgbQxCzAJBgNVBAYTAkRFMQswCQYDVQQIEwJERTELMAkGA1UEBxMCREUxCzAJBgNVBAoTAkRFMSQwIgYDVQQLExtVbml2ZW50aW9uIENvcnBvcmF0ZSBTZXJ2ZXIxOjA4BgNVBAMTMVVuaXZlbnRpb24gQ29ycG9yYXRlIFNlcnZlciBSb290IENBIChJRD1ZUmtMV0xEdSkxHDAaBgkqhkiG9w0BCQEWDXNzbEBkZXYubG9jYWyCCQDoy4dKebKuUzALBgNVHQ8EBAMCBeAwKQYDVR0RBCIwIIITbWFzdGVyMTIwLmRldi5sb2NhbIIJbWFzdGVyMTIwMA0GCSqGSIb3DQEBCwUAA4IBAQCbgrHKTHaCQopTGLjgcz8ZqkaXM5AWZjX2DfYbBtVwtXhPU7j0us70+sLbvnY28JXN/bWl2xCC2yBTAxcFGzlX1jA3fa7OxwjVidDmfN/vNaEvKQWowM1dWdXFVhPHo7DRc4FkWrtvXddA1A+5b6wuCggLQYP1vS6rbdcn2roOeEK9fwOopdN9+6puuRnx6L4FDbG9/CyslYDV1AnZW1Ae3e/mCzKHvLqBeZsWKmGi00wWmnKIMAX3Iv5Op8udYOaZdv8NnUAZ98McCkw5rb0DFByvPodtTzk6c6dJp3q0hjroBi0Ql5DHlvXAcXxAcG0tcIfCCBox6JasTK0UCm+9</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+    <saml:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
+        SPNameQualifier="https://master120.dev.local/univention/saml/metadata">Administrator</saml:NameID>
+</samlp:LogoutRequest>

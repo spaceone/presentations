@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<samlp:AuthnRequest AssertionConsumerServiceURL="https://master120.dev.local/univention/saml/"
+    Destination="https://ucs-sso.dev.local/simplesamlphp/saml2/idp/SSOService.php"
+    ID="id-6pTGeQqey7GxutjRK" IssueInstant="2017-12-19T00:29:14Z"
+    ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"
+    xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <saml:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://master120.dev.local/univention/saml/metadata</saml:Issuer>
+    <ds:Signature Id="Signature1">
+        <ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <ds:Reference URI="#id-6pTGeQqey7GxutjRK">
+                <ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue>ZGB+0+A8e6ZoDeZzWp0uT2a/7rA=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>TPZCZecCy0FUXYORiSf9JJFg/eNnnz49H/jNs/quCI6AhaktDSVXqvLEuPQsUZAB
+            1vjWMoiGz6kodPsF6/4OUOkpFVBYCFhz/sEkyImNe5O4TJO5NAgMaoBz8CuLFjHB
+            RQ+nQyFmihcl7IdfSbc+N+G5JuORwwb+ZPs0Fjcrn03MU+g2V7pKmEoSg9Zzb3z3
+            mno6ELfvxPla+ocy/iRNYuiQ0wZnlG8eOeKpd3zZjnbfELXvtqCeVDl+S3RAs9QU
+            xf6XjrZvPQ0zy5FIm4doEfxow6tKJgUS87sM6Xhz9VkMYjpbwg1bcfdURjonAUn8 la3Dh5zTjWsfgG9ArmaAPQ==</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>MIIFGzCCBAOgAwIBAgIBATANBgkqhkiG9w0BAQsFADCBtDELMAkGA1UEBhMCREUxCzAJBgNVBAgTAkRFMQswCQYDVQQHEwJERTELMAkGA1UEChMCREUxJDAiBgNVBAsTG1VuaXZlbnRpb24gQ29ycG9yYXRlIFNlcnZlcjE6MDgGA1UEAxMxVW5pdmVudGlvbiBDb3Jwb3JhdGUgU2VydmVyIFJvb3QgQ0EgKElEPVlSa0xXTER1KTEcMBoGCSqGSIb3DQEJARYNc3NsQGRldi5sb2NhbDAeFw0xNzEyMTgwOTUyMjJaFw0yMjEyMTcwOTUyMjJaMIGWMQswCQYDVQQGEwJERTELMAkGA1UECBMCREUxCzAJBgNVBAcTAkRFMQswCQYDVQQKEwJERTEkMCIGA1UECxMbVW5pdmVudGlvbiBDb3Jwb3JhdGUgU2VydmVyMRwwGgYDVQQDExNtYXN0ZXIxMjAuZGV2LmxvY2FsMRwwGgYJKoZIhvcNAQkBFg1zc2xAZGV2LmxvY2FsMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxkR33nNYCiBKrtPceohOmqOKapQjjLHwGSpiKayLEU+LB60gh/HEUhZnBy5OZ5A7NqGv9WfqLIsibr6MmZvBPtx9mebXASUFC4r0qYyp9jVbCzg1MHo5ZhYy6UBErs0TF7fUifS8ROZ3vTuVgIbbudhhsCq8svzsKRAuTZGKUFJF8wmjfJpWQbWmmypVbLHSLSAXAOME17a4hH/HonaSLKi7F+RRLM9E1q6voC+ROpkWJtJi6WJrMWz7OQnTQSNKPhNVJvRnwW267ZQ3mcK+r7G6o+5xGbi057eAWv8JYUwwb/755sJieAHdVXVZbEBmUrD5Ed5wRByd0505mgl5uwIDAQABo4IBUjCCAU4wCQYDVR0TBAIwADAdBgNVHQ4EFgQUlNYAVFlTXgLqC0+ap8eYsLKtY90wgekGA1UdIwSB4TCB3oAUb2HovhgvFNUXI8YdZxW4RAFFsg2hgbqkgbcwgbQxCzAJBgNVBAYTAkRFMQswCQYDVQQIEwJERTELMAkGA1UEBxMCREUxCzAJBgNVBAoTAkRFMSQwIgYDVQQLExtVbml2ZW50aW9uIENvcnBvcmF0ZSBTZXJ2ZXIxOjA4BgNVBAMTMVVuaXZlbnRpb24gQ29ycG9yYXRlIFNlcnZlciBSb290IENBIChJRD1ZUmtMV0xEdSkxHDAaBgkqhkiG9w0BCQEWDXNzbEBkZXYubG9jYWyCCQDoy4dKebKuUzALBgNVHQ8EBAMCBeAwKQYDVR0RBCIwIIITbWFzdGVyMTIwLmRldi5sb2NhbIIJbWFzdGVyMTIwMA0GCSqGSIb3DQEBCwUAA4IBAQCbgrHKTHaCQopTGLjgcz8ZqkaXM5AWZjX2DfYbBtVwtXhPU7j0us70+sLbvnY28JXN/bWl2xCC2yBTAxcFGzlX1jA3fa7OxwjVidDmfN/vNaEvKQWowM1dWdXFVhPHo7DRc4FkWrtvXddA1A+5b6wuCggLQYP1vS6rbdcn2roOeEK9fwOopdN9+6puuRnx6L4FDbG9/CyslYDV1AnZW1Ae3e/mCzKHvLqBeZsWKmGi00wWmnKIMAX3Iv5Op8udYOaZdv8NnUAZ98McCkw5rb0DFByvPodtTzk6c6dJp3q0hjroBi0Ql5DHlvXAcXxAcG0tcIfCCBox6JasTK0UCm+9</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature><samlp:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"/>
+</samlp:AuthnRequest>
