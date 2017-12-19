@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<saml:EntityDescriptor xmlns:saml="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://master120.dev.local/univention/saml/metadata"><saml:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"><saml:KeyDescriptor use="signing"><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIFGzCCBAOgAwIBAgIBATANBgkqhkiG9w0BAQsFADCBtDELMAkGA1UEBhMCREUx
+CzAJBgNVBAgTAkRFMQswCQYDVQQHEwJERTELMAkGA1UEChMCREUxJDAiBgNVBAsT
+G1VuaXZlbnRpb24gQ29ycG9yYXRlIFNlcnZlcjE6MDgGA1UEAxMxVW5pdmVudGlv
+biBDb3Jwb3JhdGUgU2VydmVyIFJvb3QgQ0EgKElEPVlSa0xXTER1KTEcMBoGCSqG
+SIb3DQEJARYNc3NsQGRldi5sb2NhbDAeFw0xNzEyMTgwOTUyMjJaFw0yMjEyMTcw
+OTUyMjJaMIGWMQswCQYDVQQGEwJERTELMAkGA1UECBMCREUxCzAJBgNVBAcTAkRF
+MQswCQYDVQQKEwJERTEkMCIGA1UECxMbVW5pdmVudGlvbiBDb3Jwb3JhdGUgU2Vy
+dmVyMRwwGgYDVQQDExNtYXN0ZXIxMjAuZGV2LmxvY2FsMRwwGgYJKoZIhvcNAQkB
+Fg1zc2xAZGV2LmxvY2FsMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
+xkR33nNYCiBKrtPceohOmqOKapQjjLHwGSpiKayLEU+LB60gh/HEUhZnBy5OZ5A7
+NqGv9WfqLIsibr6MmZvBPtx9mebXASUFC4r0qYyp9jVbCzg1MHo5ZhYy6UBErs0T
+F7fUifS8ROZ3vTuVgIbbudhhsCq8svzsKRAuTZGKUFJF8wmjfJpWQbWmmypVbLHS
+LSAXAOME17a4hH/HonaSLKi7F+RRLM9E1q6voC+ROpkWJtJi6WJrMWz7OQnTQSNK
+PhNVJvRnwW267ZQ3mcK+r7G6o+5xGbi057eAWv8JYUwwb/755sJieAHdVXVZbEBm
+UrD5Ed5wRByd0505mgl5uwIDAQABo4IBUjCCAU4wCQYDVR0TBAIwADAdBgNVHQ4E
+FgQUlNYAVFlTXgLqC0+ap8eYsLKtY90wgekGA1UdIwSB4TCB3oAUb2HovhgvFNUX
+I8YdZxW4RAFFsg2hgbqkgbcwgbQxCzAJBgNVBAYTAkRFMQswCQYDVQQIEwJERTEL
+MAkGA1UEBxMCREUxCzAJBgNVBAoTAkRFMSQwIgYDVQQLExtVbml2ZW50aW9uIENv
+cnBvcmF0ZSBTZXJ2ZXIxOjA4BgNVBAMTMVVuaXZlbnRpb24gQ29ycG9yYXRlIFNl
+cnZlciBSb290IENBIChJRD1ZUmtMV0xEdSkxHDAaBgkqhkiG9w0BCQEWDXNzbEBk
+ZXYubG9jYWyCCQDoy4dKebKuUzALBgNVHQ8EBAMCBeAwKQYDVR0RBCIwIIITbWFz
+dGVyMTIwLmRldi5sb2NhbIIJbWFzdGVyMTIwMA0GCSqGSIb3DQEBCwUAA4IBAQCb
+grHKTHaCQopTGLjgcz8ZqkaXM5AWZjX2DfYbBtVwtXhPU7j0us70+sLbvnY28JXN
+/bWl2xCC2yBTAxcFGzlX1jA3fa7OxwjVidDmfN/vNaEvKQWowM1dWdXFVhPHo7DR
+c4FkWrtvXddA1A+5b6wuCggLQYP1vS6rbdcn2roOeEK9fwOopdN9+6puuRnx6L4F
+DbG9/CyslYDV1AnZW1Ae3e/mCzKHvLqBeZsWKmGi00wWmnKIMAX3Iv5Op8udYOaZ
+dv8NnUAZ98McCkw5rb0DFByvPodtTzk6c6dJp3q0hjroBi0Ql5DHlvXAcXxAcG0t
+cIfCCBox6JasTK0UCm+9
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></saml:KeyDescriptor><saml:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://master120.dev.local/univention/saml/slo/" /><saml:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://master120.dev.local/univention/saml/slo/" /><saml:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://master120.dev.local/univention/saml/slo/" /><saml:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://master120.dev.local/univention/saml/slo/" /><saml:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://10.200.27.120/univention/saml/slo/" /><saml:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://10.200.27.120/univention/saml/slo/" /><saml:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://10.200.27.120/univention/saml/slo/" /><saml:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://10.200.27.120/univention/saml/slo/" /><saml:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://master120.dev.local/univention/saml/" index="1" /><saml:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://master120.dev.local/univention/saml/" index="2" /><saml:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://10.200.27.120/univention/saml/" index="3" /><saml:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://10.200.27.120/univention/saml/" index="4" /><saml:AttributeConsumingService index="1"><saml:ServiceName xml:lang="en" /><saml:ServiceDescription xml:lang="en">Univention Management Console SAML2.0 Service Provider</saml:ServiceDescription><saml:RequestedAttribute FriendlyName="uid" Name="urn:oid:0.9.2342.19200300.100.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true" /></saml:AttributeConsumingService></saml:SPSSODescriptor></saml:EntityDescriptor>
