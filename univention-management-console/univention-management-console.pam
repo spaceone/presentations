@@ -1,0 +1,16 @@
+auth sufficient pam_saml.so grace=600 userid=urn:oid:0.9.2342.19200300.100.1.1
+    idp=/usr/share/univention-management-console/saml/idp/ucs-sso.dev.local.xml
+    trusted_sp=https://master120.dev.local/univention/saml/metadata
+
+auth     sufficient                         pam_unix.so try_first_pass
+auth     sufficient                         pam_krb5.so use_first_pass defer_pwchange
+auth     sufficient                           pam_ldap.so use_first_pass
+
+auth     required       pam_deny.so
+account  sufficient             pam_unix.so
+account  sufficient             pam_krb5.so force_pwchange
+account  required               pam_ldap.so
+session    required   pam_unix.so
+password requisite  pam_cracklib.so
+password sufficient pam_unix.so obscure use_first_pass use_authtok
+password required pam_krb5.so use_first_pass use_authtok force_pwchange

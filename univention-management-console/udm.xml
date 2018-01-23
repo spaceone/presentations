@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<umc version="2.0">
+	<module id="udm" version="1.0">
+		<name>Univention Directory Manager</name>
+		<description>Manages all UDM modules</description>
+		<keywords></keywords>
+		<flavor priority="50" id="users/user">
+			<name>Users</name>
+			<description>Management of domain users</description>
+			<keywords>users</keywords>
+			<categories>
+				<category name="users"/>
+			</categories>
+		</flavor>
+		<flavor priority="50" id="groups/group">
+			<name>Groups</name>
+			<description>Management of user and computer groups in the domain</description>
+			<keywords>groups</keywords>
+			<categories>
+				<category name="users"/>
+			</categories>
+		</flavor>
+		<flavor priority="50" id="navigation">
+			<name>LDAP directory</name>
+			<description>Browsing and managing the LDAP tree</description>
+			<keywords>ldap,directory,udm</keywords>
+		</flavor>
+		<categories>
+			<category name="domain"/>
+		</categories>
+		<command name="udm/put" function="put" />
+		<command name="udm/add" function="add" />
+		<command name="udm/remove" function="remove" />
+		<command name="udm/get" function="get" />
+		<command name="udm/copy" function="copy" />
+		<command name="udm/move" function="move" />
+	</module>
+</umc>
