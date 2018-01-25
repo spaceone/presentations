@@ -166,6 +166,17 @@ os.write(fd, secret)
 os.close(fd)
 ```
 
+Besser, weil die Zieldatei dann atomar verändert wird, falls sie schon existiert:
+```python
+import os
+import tempfile
+import shutil
+fd, tmp_filename = tempfile.mkstemp(prefix=os.path.basename(secret_filename), dir=os.path.dirname(secret_filename))
+with os.fdopen(fd, 'w') as fd:
+	fd.write(secret)
+shutil.move(tmp_filename, secret_filename)
+```
+
 Falsch:
 ```python
 with open(secret_filename, 'w') as fd:
